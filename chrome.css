@@ -87,13 +87,20 @@ a.vip {
     background-color: #555;
     color: #eee !important;
 }
-#page, #chat-messages, #forum, .category, .topic, .message-wrapper, .profile, #preview, .item-preview, .item-preview .stats div:nth-child(2n+1), .ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .language.card, .report, .report th, #registers, #registers th, .register, .register td, #page-top, .hover_tooltip, .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #bank .pack, #tutorial table, #ai-stats {
-    background-color: #333 !important;
-    color: #ccc !important;
+
+#page, #page-top, #bank .pack, #preview, .item-preview, .item-preview .stats div:nth-child(2n+1),
+#all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .pm,
+#all-messages, #all-messages:hover, .hover_tooltip, .compo.in-tournament .leeks, .compo .leeks,
+#garden-left .tab, .category, .topic, #chat-messages {
+	background-color: #333 !important;
 }
 
-pre {
-  color: #ccc !important;
+#page, #forum, .category, .topic, .message-wrapper, .profile, .item-preview, .item-preview .stats div:nth-child(2n+1),
+.ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu,
+.language.card, .report, .report th, #registers, #registers th, .register, .register td, .hover_tooltip,
+.compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #tutorial table,
+#ai-stats, pre, .function-name {
+    color: #ccc !important;
 }
 
 .action {
@@ -168,7 +175,7 @@ input, textarea {
     color: #eee !important;
 }
 .topic:hover, .category:hover, #search .result:hover {
-    background-color: #444;
+    background-color: #444 !important;
     color: #488 !important;
 }
 
@@ -264,6 +271,10 @@ table .me td {
   background-color: #333 !important;
 }
 
+.hint-dialog .hint.active {
+	background-color: #044 !important;
+}
+
 .hint-dialog .hints, .hint-dialog .details, .hint-dialog .hint, .detail-dialog {
     background-color: #444 !important;
     color: #eee !important;
@@ -305,7 +316,8 @@ table .me td {
     border: 1px solid #aaa;
 }
 
-#leek-table tr > td:nth-child(n+2), #bottom-table tr > td:nth-child(n+2), #leek-status tr > td:nth-child(n+2), #ai-popup tr > td:nth-child(n+2) {
+#leek-table tr > td:nth-child(n+2), #bottom-table tr > td:nth-child(n+2), #leek-status tr > td:nth-child(n+2),
+#ai-popup tr > td:nth-child(n+2) {
     border-left: 1px solid #444;
 }
 .fight-history, .fight-history span a {
