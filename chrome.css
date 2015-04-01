@@ -217,6 +217,40 @@ pre .line-number {
     line-height: 1.3em;
 }
 
+.message pre {
+  background-color: #333 !important;
+}
+
+.message .cm-lsfunc {
+  color: #ddd !important;
+}
+
+.message .cm-comment {
+  color: #171 !important;
+}
+
+.message .cm-function {
+  color: #A6E22E !important;
+}
+
+.message .cm-lsconst {
+  color: #FFF !important;
+  font-weight: bold !important;
+}
+
+.message .cm-number {
+  color: #AE81FF !important;
+}
+
+.message .cm-variable, .message .cm-variable-2 {
+  color: #F8F8F2 !important;
+}
+
+.message .cm-keyword, .message .cm-variable-declaration, .message .cm-function-declaration {
+  color: #F92672 !important;
+  font-weight: normal !important;
+}
+
 /* Notifs */
 
 .pm:hover, #all-messages:hover, .notif:hover, #all-notifs:hover, .setting:hover {
@@ -283,6 +317,7 @@ table .me td {
     background-color: #444 !important;
     color: #eee !important;
 }
+
 
 
 /* Leek */
