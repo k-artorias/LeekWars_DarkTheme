@@ -12,12 +12,12 @@ body.sfw #menu div::before {
     /*color: #111;*/
 }
 h1, h2, h3 {
-    color: #aaa !important;
+    color: #bbb !important;
     ;
 }
 
 a {
-    color: #aaa !important;
+    color: #bbb !important;
 }
 
 a.admin {
@@ -103,7 +103,7 @@ a.vip {
 .ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu,
 .language.card, .report, .report th, #registers, #registers th, .register, .register td, .hover_tooltip,
 .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #tutorial table,
-#ai-stats, pre, .function-name {
+#ai-stats, pre, .function-name, .leek-farmer-div {
     color: #ccc !important;
 }
 
@@ -139,6 +139,13 @@ input, textarea {
     background: none repeat scroll 0 0 #333;
     border: 1px solid #ddd;
 }
+.item-preview .constant {
+    color: #999 !important;
+}
+
+.item-preview .level {
+    color: #333 !important;
+}
 /** Team */
 
 .compo .leeks {
@@ -168,7 +175,7 @@ input, textarea {
 
 #forum .message {
     background-color: #444;
-    color: #aaa !important;
+    color: #bbb !important;
 }
 #forum .profile {
     background-color: #444;
@@ -185,6 +192,10 @@ input, textarea {
 
 .topic.pinned {
     border-bottom: 1px solid #ddd;
+}
+
+.topic .last-message, .topic .num-messages {
+    color: #999 !important;
 }
 
 .conversation-preview:hover {
