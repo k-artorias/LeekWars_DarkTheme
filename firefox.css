@@ -18,7 +18,19 @@ h1, h2, h3 {
 }
 
 a {
-    color: #aaa !important;;
+    color: #aaa !important;
+}
+
+a.admin {
+  color: #df1500 !important;
+}
+
+a.moderator {
+ color: #ffa900 !important;
+}
+
+a.vip {
+ color: #008fd3 !important;
 }
 
 .chat-message a, .message a {
@@ -45,9 +57,9 @@ a {
     border-left: none !important;
 }
 #tabs .tab {
-    border-bottom: 1px solid #d1d1d1;
-    border-left: 1px solid #d1d1d1;
-    border-right: 1px solid #d1d1d1;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
 }
 #tabs .tab.selected, #tabs .tab.selected .name {
     background-color: #488 !important;
@@ -77,7 +89,7 @@ a {
     background-color: #555;
     color: #eee !important;
 }
-#page, #chat-messages, #forum, .category, .topic, .message-wrapper, .profile, #preview, .item-preview, .item-preview .stats div:nth-child(2n+1), .ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .language.card, .report, .report th, pre, #registers, #registers th, .register, .register td, #page-top, .hover_tooltip, .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #bank .pack {
+#page, #chat-messages, #forum, .category, .topic, .message-wrapper, .profile, #preview, .item-preview, .item-preview .stats div:nth-child(2n+1), .ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .language.card, .report, .report th, pre, #registers, #registers th, .register, .register td, #page-top, .hover_tooltip, .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #bank .pack, #tutorial table {
     background-color: #333;
     color: #ccc !important;
 }
@@ -94,7 +106,7 @@ a {
     background: none repeat scroll 0 0 #488;
 }
 #items .item.selected, #items .item, .item-preview {
-    border: 1px solid #222 !important;
+    border: 1px solid #555 !important;
 }
 #items .item:hover {
     background-color: #555;
@@ -110,10 +122,10 @@ a {
 /** Team */
 
 .compo .leeks {
-    border: 1px solid #ddd;
+    border: 1px solid #444;
 }
 #team-table tr > td:nth-child(n+2) {
-    border-left: 1px solid #ddd;
+    border-left: 1px solid #444;
 }
 .leek:hover, .myCompo:hover, .enemyCompo:hover, .farmer:hover {
     background-color: #666;
@@ -121,9 +133,17 @@ a {
 /* Garden */
 
 #garden-left .tab {
-    border-width: 1px !important;
-    ;
+    border: 1px solid #444 !important;
 }
+
+#garden-left .tab.active {
+    border: 1px solid #0a0 !important;
+}
+
+.fights {
+    color: #ddd;
+}
+
 /* Forum */
 
 #forum .message {
@@ -161,6 +181,10 @@ pre .line-number {
     background-color: #333 !important;
     border-bottom: none;
 }
+
+#forum .profile .messages-count b, #forum .profile .trophy-count b {
+    color: #ddd !important;;
+}
 /* Notifs */
 
 .pm:hover, #all-messages:hover, .notif:hover, #all-notifs:hover, .setting:hover {
@@ -168,21 +192,30 @@ pre .line-number {
 }
 /* Classements */
 
+#page .ranking.large, #page .ranking {
+    border: 1px solid #444;
+}
+
 .ranking tr.me {
     background-color: #444 !important;
 }
 #page .ranking th {
     background-color: #234 !important;
 }
+
+#page .ranking td, #page .ranking th {
+    border-left: none !important;;
+    border-right: none !important;;
+}
+
 /* Tables */
 
 table.ranking th, table.ranking td, table.report th, table.report td, .hover_tooltip.report, #registers th, #registers td {
-    border: 1px solid #222 !important;
+    border: 1px solid #444 !important;
     background-color: #333;
 }
 table .me td {
     background-color: #555 !important;
-    ;
 }
 /* Combat */
 
@@ -193,6 +226,10 @@ table .me td {
     color: #ff1900;
 }
 /* Editeur */
+.hint-dialog .hints, .hint-dialog .details, .hint-dialog .hint {
+    background-color: #444;
+    color: #eee;
+}
 
 .CodeMirror-selected {
     background: none repeat scroll 0 0 #555 !important;
@@ -205,20 +242,37 @@ table .me td {
 }
 /* Leek */
 
+.talent {
+    color: #bbb !important;
+}
+
+.leek .level {
+    color: #777 !important;
+}
+
+#show-registers, #hide-registers, #rename-button {
+    color: #bbb !important;
+}
+
+#tournament-info, #leek-status {
+    color: #999;
+}
+
 .hover_leeks_table th, .hover_leeks_table td {
     background-color: #333;
     border: 1px solid #aaa;
 }
 
 #leek-table tr > td:nth-child(n+2), #bottom-table tr > td:nth-child(n+2), #leek-status tr > td:nth-child(n+2), #ai-popup tr > td:nth-child(n+2) {
-    border-left: 2px solid #444;
+    border-left: 1px solid #444;
 }
 .fight-history, .fight-history span a {
     color: #555 !important;
 }
 #farmer-table tr > td:nth-child(n+2) {
-    border-left: 1px solid #ddd;
+    border-left: 1px solid #444;
 }
+
 #tournaments-history .tournament {
     background-color: #666;
     color: #ddd;
@@ -244,13 +298,17 @@ rect.entry {
 }
 /* Help */
 
-#help table td div, .menu-item, #help-menu .item, #trophies-grid .trophy {
+#help table td div, .menu-item, #help-menu .item, #general-help formula {
     background-color: #555;
     border: 1px solid #ddd;
     color: #eee;
 }
+
 #help .description {
     color: #eee;
 }
 
+.function {
+    border-bottom: 1px solid white;
+}
 }
