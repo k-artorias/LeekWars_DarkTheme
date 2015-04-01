@@ -32,6 +32,10 @@ a.vip {
     color: #0a0 !important;
 }
 
+.chat-message-messages {
+    line-height: 1.3em;
+}
+
 #big-leeks, #logo {
     opacity: 0.5;
 }
