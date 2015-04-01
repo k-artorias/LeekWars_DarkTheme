@@ -32,10 +32,6 @@ a.vip {
     color: #0a0 !important;
 }
 
-.chat-message-messages {
-    line-height: 1.3em;
-}
-
 #big-leeks, #logo {
     opacity: 0.5;
 }
@@ -214,8 +210,13 @@ pre .line-number {
 }
 
 #forum .profile .messages-count b, #forum .profile .trophy-count b {
-    color: #ddd !important;;
+    color: #ddd !important;
 }
+
+.chat-message-messages {
+    line-height: 1.3em;
+}
+
 /* Notifs */
 
 .pm:hover, #all-messages:hover, .notif:hover, #all-notifs:hover, .setting:hover {
@@ -270,20 +271,8 @@ table .me td {
 }
 /* Editeur */
 
-#ai-list .ai.selected {
-  background-color: #777 !important;
-}
-
-.CodeMirror-lines .activeline {
-  background-color: #277 !important;
-}
-
 #ai:hover {
   background-color: #999 !important;
-}
-
-.CodeMirror, .editors, .CodeMirror-gutters {
-  background-color: #333 !important;
 }
 
 .hint-dialog .hint.active {
@@ -295,15 +284,7 @@ table .me td {
     color: #eee !important;
 }
 
-.CodeMirror-selected {
-    background: none repeat scroll 0 0 #555 !important;
-}
-.cm-variable, .cm-operator, .line-number, .cm-lsfunc, .cm-variable-2 {
-    color: #ddd !important;
-}
-.cm-comment {
-    color: green !important;
-}
+
 /* Leek */
 
 .leek, .my-leek, .leek.enemy {
