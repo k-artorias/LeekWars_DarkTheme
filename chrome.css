@@ -1,4 +1,3 @@
-
 body, body.sfw {
     background: none repeat scroll 0 0 #222;
 }
@@ -33,8 +32,11 @@ a.vip {
     color: #0a0 !important;
 }
 
-#big-leeks {
-    /*display: none;*/
+#big-leeks, #logo {
+    opacity: 0.5;
+}
+#page-background {
+    background-color: transparent;
 }
 #page-wrapper-top::before, #page-wrapper-bottom::before {
     border: none !important;
@@ -85,14 +87,25 @@ a.vip {
     background-color: #555;
     color: #eee !important;
 }
-#page, #chat-messages, #forum, .category, .topic, .message-wrapper, .profile, #preview, .item-preview, .item-preview .stats div:nth-child(2n+1), .ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .language.card, .report, .report th, pre, #registers, #registers th, .register, .register td, #page-top, .hover_tooltip, .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #bank .pack, #tutorial table {
-    background-color: #333;
+#page, #chat-messages, #forum, .category, .topic, .message-wrapper, .profile, #preview, .item-preview, .item-preview .stats div:nth-child(2n+1), .ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .language.card, .report, .report th, #registers, #registers th, .register, .register td, #page-top, .hover_tooltip, .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #bank .pack, #tutorial table, #ai-stats {
+    background-color: #333 !important;
     color: #ccc !important;
 }
+
+pre {
+  color: #ccc !important;
+}
+
 .action {
     color: #eee !important;
-    ;
 }
+
+input, textarea {
+  background-color: #555 !important;
+  border: 1px solid #bbb !important;
+  color: #ddd !important;
+}
+
 /* Market */
 
 #bank .pack {
@@ -184,7 +197,7 @@ pre .line-number {
 /* Notifs */
 
 .pm:hover, #all-messages:hover, .notif:hover, #all-notifs:hover, .setting:hover {
-    background-color: #555;
+    background-color: #555 !important;
 }
 /* Classements */
 
@@ -208,12 +221,24 @@ pre .line-number {
 
 table.ranking th, table.ranking td, table.report th, table.report td, .hover_tooltip.report, #registers th, #registers td {
     border: 1px solid #444 !important;
-    background-color: #333;
+    background-color: #333 !important;
 }
 table .me td {
     background-color: #555 !important;
 }
 /* Combat */
+
+#top-part-wrapper {
+    top: 0px;
+}
+
+#too-long {
+    color: #444;
+}
+
+#report-actions #actions {
+    background-color: #555;
+}
 
 .log {
     color: #ddd;
@@ -222,21 +247,42 @@ table .me td {
     color: #ff1900;
 }
 /* Editeur */
-.hint-dialog .hints, .hint-dialog .details, .hint-dialog .hint {
-    background-color: #444;
-    color: #eee;
+
+#ai-list .ai.selected {
+  background-color: #777 !important;
+}
+
+.CodeMirror-lines .activeline {
+  background-color: #277 !important;
+}
+
+#ai:hover {
+  background-color: #999 !important;
+}
+
+.CodeMirror, .editors, .CodeMirror-gutters {
+  background-color: #333 !important;
+}
+
+.hint-dialog .hints, .hint-dialog .details, .hint-dialog .hint, .detail-dialog {
+    background-color: #444 !important;
+    color: #eee !important;
 }
 
 .CodeMirror-selected {
     background: none repeat scroll 0 0 #555 !important;
 }
-.cm-variable, .cm-operator, .line-number, .cm-lsfunc {
-    color: #ddd;
+.cm-variable, .cm-operator, .line-number, .cm-lsfunc, .cm-variable-2 {
+    color: #ddd !important;
 }
 .cm-comment {
-    color: green;
+    color: green !important;
 }
 /* Leek */
+
+.leek, .my-leek, .leek.enemy {
+    opacity: 0.9;
+}
 
 .talent {
     color: #bbb !important;
@@ -254,8 +300,8 @@ table .me td {
     color: #999;
 }
 
-.hover_leeks_table th, .hover_leeks_table td {
-    background-color: #333;
+.hover_leeks_table th, .hover_leeks_table td, .teams_block {
+    background-color: #333 !important;
     border: 1px solid #aaa;
 }
 
@@ -273,6 +319,11 @@ table .me td {
     background-color: #666;
     color: #ddd;
 }
+
+body.sfw .fight-history.win, body.sfw .fight-history.defeat {
+    opacity: 0.2;
+}
+
 .fight-history.win {
     background-color: #6ad051;
 }
@@ -306,4 +357,15 @@ rect.entry {
 
 .function {
     border-bottom: 1px solid white;
+}
+
+#function-list div:hover {
+    background-color: #555;
+}
+
+
+/* Images */
+
+.chip img, .item.potion img, .hat img, .item img {
+    opacity: 0.8;
 }
