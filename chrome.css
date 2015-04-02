@@ -9,7 +9,6 @@ body.sfw #menu div::before {
 }
 h1, h2, h3 {
     color: #bbb !important;
-    ;
 }
 
 a {
@@ -60,7 +59,7 @@ a.vip {
     border-right: 1px solid #999;
 }
 #tabs .tab.selected, #tabs .tab.selected .name {
-    background-color: #488 !important;
+    background-color: #70a0c7 !important;
 }
 .tabs .tab:hover {
     background-color: #488 !important;
@@ -72,7 +71,7 @@ a.vip {
     background-color: #444;
 }
 #menu div.menu-active::before {
-    background-color: #488;
+    background-color: #70a0c7;
 }
 #menu a div:hover::before {
     background-color: #555 !important;
@@ -294,7 +293,7 @@ table .me td {
 }
 
 #report-actions #actions {
-    background-color: #555;
+    background-color: #444;
 }
 
 .log {
@@ -380,11 +379,9 @@ body.sfw .fight-history.win, body.sfw .fight-history.defeat {
 #trophies-grid .trophy {
     background: none repeat scroll 0 0 #333 !important;
     border: none !important;
-    ;
 }
 rect.entry {
     fill: #444 !important;
-    ;
 }
 /* Help */
 
