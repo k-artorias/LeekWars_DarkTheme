@@ -92,6 +92,7 @@ a.vip {
 }
 
 #page, #page-top, #bank .pack, #preview, .item-preview, .item-preview .stats div:nth-child(2n+1),
+.hover_item_preview, .hover_item_preview .stats div:nth-child(2n+1), .hover_item_preview .header,
 #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .pm,
 #all-messages, #all-messages:hover, .hover_tooltip, .compo.in-tournament .leeks, .compo .leeks,
 #garden-left .tab, .category, .topic, #chat-messages {
@@ -99,6 +100,7 @@ a.vip {
 }
 
 #page, #forum, .category, .topic, .message-wrapper, .profile, .item-preview, .item-preview .stats div:nth-child(2n+1),
+.hover_item_preview, .hover_item_preview .stats div:nth-child(2n+1),
 .ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu,
 .language.card, .report, .report th, #registers, #registers th, .register, .register td, .hover_tooltip,
 .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #tutorial table,
@@ -124,13 +126,13 @@ input, textarea {
 #items .item.selected {
     background: none repeat scroll 0 0 #488;
 }
-#items .item.selected, #items .item, .item-preview {
+#items .item.selected, #items .item, .item-preview, .hover_item_preview {
     border: 1px solid #555 !important;
 }
 #items .item:hover {
     background-color: #555;
 }
-.item-preview .header, .item-preview .header h2 {
+.item-preview .header, .item-preview .header h2, .hover_item_preview .header {
     background-color: #999;
     color: #444 !important;
 }
@@ -138,11 +140,11 @@ input, textarea {
     background: none repeat scroll 0 0 #333;
     border: 1px solid #ddd;
 }
-.item-preview .constant {
+.item-preview .constant, .hover_item_preview .constant {
     color: #999 !important;
 }
 
-.item-preview .level {
+.item-preview .level, .hover_item_preview .level {
     color: #333 !important;
 }
 /** Team */
