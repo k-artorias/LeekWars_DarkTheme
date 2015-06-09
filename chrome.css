@@ -56,16 +56,8 @@ a.vip {
 #page-top::before {
     border-left: none !important;
 }
-#tabs .tab {
-    border-bottom: 1px solid #999;
-    border-left: 1px solid #999;
-    border-right: 1px solid #999;
-}
 #tabs .tab.selected, #tabs .tab.selected .name {
     background-color: #70a0c7 !important;
-}
-.tabs .tab:hover {
-    background-color: #488 !important;
 }
 .tab.leek:hover {
     background-color: #488 !important;
@@ -95,7 +87,7 @@ a.vip {
 #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .pm,
 #all-messages, #all-messages:hover, .hover_tooltip, .compo.in-tournament .leeks, .compo .leeks,
 #garden-left .tab, .category, .topic, #chat-messages, #notifications-popup, #messages-popup, #team-chat-messages,
-.chat-message {
+.chat-message, #changelog-page .wrapper {
 	background-color: #333 !important;
 }
 
@@ -104,7 +96,7 @@ a.vip {
 .ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu,
 .language.card, .report, .report th, #registers, #registers th, .register, .register td, .hover_tooltip,
 .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #tutorial table,
-#ai-stats, pre, .function-name, .leek-farmer-div, #notifications-popup, #messages-popup, #team-chat-messages,
+#ai-stats, pre, .function-name, .leek-farmer-div, #notifications-popup, #messages-popup, #team-chat-messages, #changelog-page .wrapper,
 .chat-message, .ct-chart .ct-label, .ct-chart .ct-label.ct-horizontal {
     color: #ccc !important;
 }
