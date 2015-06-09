@@ -87,7 +87,9 @@ a.vip {
 #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .pm,
 #all-messages, #all-messages:hover, .hover_tooltip, .compo.in-tournament .leeks, .compo .leeks,
 #garden-left .tab, .category, .topic, #chat-messages, #notifications-popup, #messages-popup, #team-chat-messages,
-.chat-message, #changelog-page .wrapper {
+.chat-message, #changelog-page .wrapper,
+#tutorial-page .panel .wrapper, #tutorial-page .menu-item, #tutorial-page table,
+#general_help-page .panel .wrapper {
 	background-color: #333 !important;
 }
 
@@ -97,8 +99,15 @@ a.vip {
 .language.card, .report, .report th, #registers, #registers th, .register, .register td, .hover_tooltip,
 .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #tutorial table,
 #ai-stats, pre, .function-name, .leek-farmer-div, #notifications-popup, #messages-popup, #team-chat-messages, #changelog-page .wrapper,
+#tutorial-page .panel .wrapper, #tutorial-page .menu-item, #tutorial-page table,
+#general_help-page .panel .wrapper,
 .chat-message, .ct-chart .ct-label, .ct-chart .ct-label.ct-horizontal {
     color: #ccc !important;
+}
+
+#general_help-page formula {
+    background-color: #444 !important;
+    border-bottom: 2px solid #999;
 }
 
 .action {
@@ -446,6 +455,9 @@ rect.entry {
 
 @media screen and (max-width: 1599px) {
 
+    body.social-collapsed #social-panel .chat {
+        display: block;
+	}
     body.menu-collapsed #social-panel, body.menu-collapsed #footer {
         left: 68px !important;
     }
