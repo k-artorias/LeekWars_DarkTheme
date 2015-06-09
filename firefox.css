@@ -91,7 +91,7 @@ a.vip {
 .hover_item_preview, .hover_item_preview .stats div:nth-child(2n+1), .hover_item_preview .header,
 #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .pm,
 #all-messages, #all-messages:hover, .hover_tooltip, .compo.in-tournament .leeks, .compo .leeks,
-#garden-left .tab, .category, .topic, #chat-messages, #notifications-popup, #messages-popup, #team-chat-messages,
+#garden-left .tab, .category, .topic, #chat-messages, #notifications-popup, #messages-popup, #team-chat-messages, .chat, div.panel, .chat div.content,
 .chat-message, #changelog-page .wrapper,
 #tutorial-page .panel .wrapper, #tutorial-page .menu-item, #tutorial-page table,
 #general_help-page .panel .wrapper {
