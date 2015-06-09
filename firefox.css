@@ -39,7 +39,7 @@ a.vip {
 }
 
 #big-leeks, #logo {
-    opacity: 0.5;
+    opacity: 0;
 }
 #page-background {
     /*background-color: transparent;*/
@@ -279,6 +279,7 @@ code pre .line-number {
 }
 #page .ranking th {
     background-color: #234 !important;
+    color: #88c;
 }
 
 #page .ranking td, #page .ranking th {

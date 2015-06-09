@@ -275,6 +275,7 @@ code pre .line-number {
 }
 #page .ranking th {
     background-color: #234 !important;
+    color: #88c;
 }
 
 #page .ranking td, #page .ranking th {
