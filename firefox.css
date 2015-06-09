@@ -405,8 +405,8 @@ body.sfw .fight-history.win, body.sfw .fight-history.defeat {
 #description .text, #fights .big, #talent, .farmer .name {
     color: #bbb;
 }
-#trophies-grid .trophy {
-    background: none repeat scroll 0 0 #333 !important;
+#trophies.grid .trophy {
+    background: none repeat scroll 0 0 #222 !important;
     border: none !important;
 }
 rect.entry {
@@ -510,5 +510,4 @@ rect.entry {
         display: none !important;
     }
 }
-
 }
