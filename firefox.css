@@ -3,10 +3,10 @@
 @-moz-document url-prefix("http://leekwars.com") {
 
 body, body.sfw, div.content {
-    /*background: none repeat scroll 0 0 #222;*/
+    background: none repeat scroll 0 0 #222;
 }
 div.panel, .chat div.content {
-    background: none repeat scroll 0 0 #333;
+    background: none repeat scroll 0 0 #222;
 }
 body.sfw #menu div::before {
     background: none repeat scroll 0 0 #444;
@@ -44,12 +44,13 @@ a.vip {
 #page-background {
     /*background-color: transparent;*/
 }
-#page-wrapper-top::before, #page-wrapper-bottom::before {
-    border: none !important;
+
+#page-wrapper {
+  background: rgba(80, 80, 80, 0.5);
+  padding: 20px;
+  padding-bottom: 0;
 }
-#page-wrapper-top, #page-wrapper, #page-wrapper-bottom {
-    background-color: transparent !important;
-}
+
 #page-bottom {
     display: none !important;
 }
