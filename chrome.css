@@ -1,5 +1,8 @@
-body, body.sfw {
+body, body.sfw, div.content {
     background: none repeat scroll 0 0 #222;
+}
+div.panel, .chat div.content {
+    background: none repeat scroll 0 0 #333;
 }
 body.sfw #menu div::before {
     background: none repeat scroll 0 0 #444;
@@ -32,7 +35,7 @@ a.vip {
 }
 
 #big-leeks, #logo {
-    opacity: 0.5;
+    opacity: 0;
 }
 #page-background {
     background-color: transparent;
@@ -87,11 +90,12 @@ a.vip {
     color: #eee !important;
 }
 
-#page, #page-top, #bank .pack, #preview, .item-preview, .item-preview .stats div:nth-child(2n+1),
+#page, #page-top, #bank-page .pack, #preview, .item-preview, .item-preview .stats div:nth-child(2n+1),
 .hover_item_preview, .hover_item_preview .stats div:nth-child(2n+1), .hover_item_preview .header,
 #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .pm,
 #all-messages, #all-messages:hover, .hover_tooltip, .compo.in-tournament .leeks, .compo .leeks,
-#garden-left .tab, .category, .topic, #chat-messages {
+#garden-left .tab, .category, .topic, #chat-messages, #notifications-popup, #messages-popup, #team-chat-messages,
+.chat-message {
 	background-color: #333 !important;
 }
 
@@ -100,7 +104,8 @@ a.vip {
 .ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu,
 .language.card, .report, .report th, #registers, #registers th, .register, .register td, .hover_tooltip,
 .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #tutorial table,
-#ai-stats, pre, .function-name, .leek-farmer-div {
+#ai-stats, pre, .function-name, .leek-farmer-div, #notifications-popup, #messages-popup, #team-chat-messages,
+.chat-message, .ct-chart .ct-label, .ct-chart .ct-label.ct-horizontal {
     color: #ccc !important;
 }
 
@@ -116,23 +121,23 @@ input, textarea {
 
 /* Market */
 
-#bank .pack {
+#bank-page .pack {
     border-bottom: 2px solid #ddd;
 }
-#items .item.selected {
+.items .item.selected {
     background: none repeat scroll 0 0 #488;
 }
-#items .item.selected, #items .item, .item-preview, .hover_item_preview {
+.item.selected, .items .item, .item-preview, .hover_item_preview {
     border: 1px solid #555 !important;
 }
-#items .item:hover {
+.items .item:hover {
     background-color: #555;
 }
 .item-preview .header, .item-preview .header h2, .hover_item_preview .header {
     background-color: #999;
     color: #444 !important;
 }
-#preview .location {
+.location {
     background: none repeat scroll 0 0 #333;
     border: 1px solid #ddd;
 }
@@ -151,7 +156,7 @@ input, textarea {
 #team-table tr > td:nth-child(n+2) {
     border-left: 1px solid #444;
 }
-.leek:hover, .myCompo:hover, .enemyCompo:hover, .farmer:hover {
+#farmer-page .leek:hover , .myCompo:hover, .enemyCompo:hover, .farmer:hover, #garden-page .leek:hover, #garden-page .myCompo:hover, #garden-page .enemyCompo:hover, #garden-page .farmer:hover {
     background-color: #666;
 }
 /* Garden */
@@ -170,11 +175,11 @@ input, textarea {
 
 /* Forum */
 
-#forum .message {
+#forum_topic-page .message {
     background-color: #444;
     color: #bbb !important;
 }
-#forum .profile {
+#forum_topic-page .profile {
     background-color: #444;
     border-right: 8px solid #333;
 }
@@ -191,18 +196,18 @@ input, textarea {
     border-bottom: 1px solid #ddd;
 }
 
-.topic .last-message, .topic .num-messages {
+.topic .last-message, .topic .num-messages, #formating {
     color: #999 !important;
 }
 
 .conversation-preview:hover {
     background-color: #444;
 }
-pre {
+code pre {
     background: none repeat scroll 0 0 #444;
     border: 6px solid #555;
 }
-pre .line-number {
+code pre .line-number {
     background-color: #222;
 }
 .language.card {
@@ -254,7 +259,7 @@ pre .line-number {
 
 /* Notifs */
 
-.pm:hover, #all-messages:hover, .notif:hover, #all-notifs:hover, .setting:hover {
+#messages .message:hover, #messages-popup .message:hover, #all-notifs:hover, .setting:hover, #notifications .notification:hover, #notifications-popup .notification:hover  {
     background-color: #555 !important;
 }
 /* Classements */
@@ -323,6 +328,10 @@ table .me td {
 
 /* Leek */
 
+#leek-page #stats > table tr:nth-child(even) {
+    background: none repeat scroll 0 0 #444;
+}
+
 .leek, .my-leek, .leek.enemy {
     opacity: 0.9;
 }
@@ -368,12 +377,24 @@ body.sfw .fight-history.win, body.sfw .fight-history.defeat {
     opacity: 0.2;
 }
 
-.fight-history.win {
+.fight-history .fight.defeat {
+    background-color: #c33a2c;
+}
+.fight-history .fight.defeat a {
+    color: #333 !important;
+}
+.fight-history .fight.win {
     background-color: #6ad051;
 }
-.fight-history.draw {
+.fight-history .fight.win a {
+    color: #333 !important;
+}
+.fight-history .fight.draw {
     background-color: #aaa;
     color: #ddd;
+}
+.fight-history .fight.draw a {
+    color: #ddd !important;
 }
 #description .text, #fights .big, #talent, .farmer .name {
     color: #bbb;
@@ -410,4 +431,73 @@ rect.entry {
 
 .chip img, .item.potion img, .hat img, .item img {
     opacity: 0.8;
+}
+
+#logs-wrapper {
+    display: none;
+}
+
+@media screen and (min-width: 0px) {
+    body.connected:not(.social-collapsed) #center {
+        /*margin-right: 400px !important;*/
+    }
+    body.connected.social-collapsed #center {
+        margin-right: 30px;
+    }
+    body.connected:not(.social-collapsed) #footer {
+        /*margin-right: 420px;*/
+    }
+    body.connected:not(.social-collapsed) #big-leeks {
+        /*right: 420px;*/
+    }
+}
+
+@media screen and (max-width: 1599px) {
+
+    body.menu-collapsed #social-panel, body.menu-collapsed #footer {
+        left: 68px !important;
+    }
+
+    body #social-panel {
+        left: 68px !important;
+    }
+
+    body.connected #footer {
+        left: 170px !important;
+    }
+
+    body.connected #social-panel {
+        /*left: 0 !important;*/
+    }
+
+    #social-panel .chat .chat-messages {
+        height: 100px;
+    }
+
+    #social-panel .chat-input {
+        height: 1.2em !important;
+        width: 97%;
+    }
+
+    #social-panel {
+        margin-left: 0;
+        display: block;
+        width: 75%;
+        max-width: 1200px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: unset !important;
+    }
+    #social-panel > .content {
+        background: none;
+        margin-right: -15px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        position: relative;
+    }
+    #messages, #notifications {
+        display: none !important;
+    }
 }
