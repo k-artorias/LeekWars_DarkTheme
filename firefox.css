@@ -3,7 +3,7 @@
 @-moz-document url-prefix("http://leekwars.com") {
 
 body, body.sfw, div.content {
-    background: none repeat scroll 0 0 #222;
+    /*background: none repeat scroll 0 0 #222;*/
 }
 div.panel, .chat div.content {
     background: none repeat scroll 0 0 #333;
@@ -39,10 +39,10 @@ a.vip {
 }
 
 #big-leeks, #logo {
-    opacity: 0;
+    opacity: 0.5;
 }
 #page-background {
-    background-color: transparent;
+    /*background-color: transparent;*/
 }
 #page-wrapper-top::before, #page-wrapper-bottom::before {
     border: none !important;
