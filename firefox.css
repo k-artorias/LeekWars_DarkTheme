@@ -310,7 +310,7 @@ table .me td {
     background-color: #444;
 }
 
-.log {
+#report-page .log {
     color: #ddd;
 }
 .log.error {

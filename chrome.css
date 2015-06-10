@@ -35,7 +35,7 @@ a.vip {
 }
 
 #big-leeks, #logo {
-    opacity: 0.5;
+    opacity: 0;
 }
 #page-background {
     /*background-color: transparent;*/
@@ -306,7 +306,7 @@ table .me td {
     background-color: #444;
 }
 
-.log {
+#report-page .log {
     color: #ddd;
 }
 .log.error {
