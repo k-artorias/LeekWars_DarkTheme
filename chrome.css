@@ -503,7 +503,7 @@ rect.entry {
         padding-top: 0px;
         position: relative;
     }
-    #messages, #notifications {
+    #social-panel #messages, #social-panel #notifications {
         display: none !important;
     }
 }
