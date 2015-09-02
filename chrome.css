@@ -14,6 +14,10 @@ body.sfw #menu div::before {
 	/*color: #111;*/
 }
 
+#actions .action.log {
+    display: none;
+}
+
 .entity-details .stat.absolute-shield, .entity-details .stat.relative-shield, .entity-details .stat.damage-return {
     color: #666 !important;
 }
@@ -40,6 +44,15 @@ a.vip {
 
 .chat-message a, .message a {
 	color: #0a0 !important;
+}
+
+#chat-messages .chat-message {
+    border: 1px solid #666;
+}
+
+#chat-messages, #chat-messages .chat-message {
+	background-color: #333 !important;
+    /*color: #777 !important;*/
 }
 
 #big-leeks, #logo {
@@ -102,8 +115,8 @@ a.vip {
 .hover_item_preview, .hover_item_preview .stats div:nth-child(2n+1), .hover_item_preview .header,
 #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu, .pm,
 #all-messages, #all-messages:hover, .hover_tooltip, .compo.in-tournament .leeks, .compo .leeks,
-#garden-left .tab, .category, .topic, #chat-messages, #notifications-popup, #messages-popup, #team-chat-messages,
-.chat, div.panel, .chat div.content, .chat-message, #changelog-page .wrapper, #tutorial-page .panel .wrapper,
+#garden-left .tab, .category, .topic,  #notifications-popup, #messages-popup, #team-chat-messages,
+.chat, div.panel, .chat div.content, #changelog-page .wrapper, #tutorial-page .panel .wrapper,
 #tutorial-page .menu-item, #tutorial-page table, #general_help-page .panel .wrapper,
 #trophies-page .trophy.unlocked{
 	background-color: #333 !important;
