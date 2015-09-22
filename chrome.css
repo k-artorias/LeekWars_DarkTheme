@@ -46,11 +46,11 @@ a.vip {
 	color: #0a0 !important;
 }
 
-#chat-messages .chat-message {
+#chat-messages .chat-message, #conversations .chat-message {
     border: 1px solid #666;
 }
 
-#chat-messages, #chat-messages .chat-message {
+#chat-messages, #chat-messages .chat-message, #conversations, #conversations .chat-message, .conversations #chat-messages, .conversations #chat-messages .chat-message-messages {
 	background-color: #333 !important;
     /*color: #777 !important;*/
 }
@@ -127,10 +127,14 @@ a.vip {
 .ranking-large, #page .ranking, .pm, #all-messages, #all-messages:hover, #notifs, #notifs-menu, #settings-menu,
 .language.card, .report, .report th, #registers, #registers th, .register, .register td, .hover_tooltip,
 .compo.in-tournament .leeks, .leeks a, .compo .leeks, .leeks .empty, #garden-left .tab, #tutorial table,
-#ai-stats, pre, .function-name, .leek-farmer-div, #notifications-popup, #messages-popup, #team-chat-messages,
+#ai-stats, .function-name, .leek-farmer-div, #notifications-popup, #messages-popup, #team-chat-messages,
 #changelog-page .wrapper, #tutorial-page .panel .wrapper, #tutorial-page .menu-item, #tutorial-page table,
 #general_help-page .panel .wrapper, .chat-message, .ct-chart .ct-label, .ct-chart .ct-label.ct-horizontal {
 	color: #ccc !important;
+}
+
+pre {
+    color: #ccc;
 }
 
 #trophies-page .trophy.unlocked {
